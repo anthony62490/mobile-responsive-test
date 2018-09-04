@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+::selection {
+  /* Changes the color of highlighted text */
+  background: #FED136;
+}
+::-moz-selection {
+  background: #FED136;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  /* background: #212529; */
+  background: transparent;
+  color: #FFFFFF;
+}
+
+.main-logo {
+  color: #FED136;
+  font-size: 30px;
+  font-family: 'Kaushan Script', cursive;
+  margin: 5px;
+}
+
+.intro-splash {
+  /* border: 1px solid green; */
+  width: 100%;
+  height: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+  background-size: 100%
+}
+
+#intro-message-one {
+  /* margin: 30px; */
+  color: #FFFFFF;
+  font-style: italic;
+  font-size: 40px;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+#intro-message-two {
+  margin: 30px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 75px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.intro-splash button {
+  color: #FFFFFF;
+  background-color: #FED136;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 900px) {
+  /* At less than 900px (mobile size) */
+  header {
+    background-color: #212529;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* At standard resolutions */
+  header {
+    background-color: transparent;
+  }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

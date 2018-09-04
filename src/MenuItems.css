@@ -1,0 +1,56 @@
+button {
+  color: #FFFFFF;
+  background-color: #FED136;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  padding: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: .25rem;
+}
+
+.red-button {
+  background: red;
+}
+
+.yellow-button {
+  background: #FED136;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-item {
+  margin: 20px;
+  text-transform: uppercase;
+}
+
+.menu-item:hover {
+  color: #FED136;
+}
+
+@media only screen and (max-width: 900px) {
+  /* At less than 900px (mobile size) */
+  header {
+    background-color: #212529;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* At standard resolutions */
+  header {
+    background-color: transparent;
+  }
+  #menu-button {
+    display: none;
+  }
+  Menu {
+    display: flex;
+    flex-direction: row;
+  }
+}
